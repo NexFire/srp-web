@@ -33,7 +33,7 @@ nav{
     height: 5vh;
     border: none;
 }
-#menu{
+header{
     width: 100vw;
     display: flex;
     align-items: center;
@@ -58,6 +58,7 @@ nav{
 .nav:hover{
     background-color: rgb(235,235,235);
 }
+/*
 .underline{
     visibility: hidden;
     background-color: rgb(255,0,0);
@@ -65,8 +66,13 @@ nav{
     height: 2px;
     margin-top: 2px;
 }
+*/
 .menu-text-span{
     font-size: 2em;
+}
+.menu-text-span:before{
+	content: '';
+	position: absolute;
 }
 .menu-text{
     display: flex;

@@ -1,3 +1,5 @@
+
+/*
 window.onload = function loadFunction(){
     let navLink = document.getElementsByClassName("nav");
     for(let a=0;a<navLink.length;a++){
@@ -21,3 +23,4 @@ window.onload = function loadFunction(){
         
     }    
 }
+*/
