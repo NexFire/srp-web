@@ -15,10 +15,15 @@
 html{
     height: 100vh;
     padding: 0px;
+    width: 100vw;
 }
 body{
     height: 100vh;
     margin: 0px;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 6vh auto;
+    grid-template-columns: 100vw;
 }
 nav{
     width: 100%;
@@ -38,6 +43,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    height:6vh;
+    grid-row: 1;
+    grid-column: 1;
 }
 #logo-container{
     padding: 10px;
@@ -94,3 +103,40 @@ header{
     align-items: center;
     flex-wrap: wrap;
 }
+#banners{
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner{
+    position: absolute;
+    left:0%;
+    top:0%;
+    width: 100%;
+}
+#banner-zima{
+    clip-path: polygon(100% 1%, 1% 100%, 100% 100%);
+}
+#banner-leto{
+    clip-path: polygon(0% 0%,0% 99%,99% 0% );
+}
+#banner-text{
+    background-color: rgb(255,255,255);
+    display: block;
+    color: rgb(0,0,0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+#content{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+
+
+
+
+
+
