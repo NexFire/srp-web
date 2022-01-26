@@ -68,11 +68,25 @@ header{
 }
 */
 .menu-text-span{
-    font-size: 2em;
+    font-size: 2.5vw;
+    position: relative;
 }
-.menu-text-span:before{
+
+.menu-text-span::before{
 	content: '';
+	display: block;
 	position: absolute;
+	background-color: rgb(255,0,0);
+	height: 3px;
+	width:100%;
+	left: 0%;
+	top: 100%;
+	clip-path: inset(0% 50% 0% 50%);
+	transition: clip-path 0.5s cubic-bezier(.23,.84,.11,.72);
+	/*.41,.99,.8,.67  .79,1.22,.7,.61 .22,1,.41,.76   .22,1,.07,.74    .23,.84,.03,.56   .23,.84,.11,.72*/
+}
+.nav:hover >.menu-text >.menu-text-span::before{
+	clip-path: inset(0% 0% 0% 0%);
 }
 .menu-text{
     display: flex;
