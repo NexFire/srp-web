@@ -24,3 +24,7 @@ window.onload = function loadFunction(){
     }    
 }
 */
+var focus="none";
+function setSummer(){
+    
+}

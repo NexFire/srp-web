@@ -120,15 +120,33 @@ header{
     background-color: rgb(255,255,255);
     color: rgb(0,0,0);
     font-size: 2em;
+    transform: translate(-50%,-50%);
+    border-radius: 3px;
+    padding: 3px;
 }
 #content{
     grid-row: 2;
     grid-column: 1;
 }
-
-
-
-
-
-
-
+#leto-text{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+    color: rgb(0,0,0);
+    font-size: 2em;
+    border-radius: 3px;
+    padding: 3px;
+}
+#zima-text{
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+    color: rgb(0,0,0);
+    font-size: 2em;
+    border-radius: 3px;
+    padding: 3px;
+}
